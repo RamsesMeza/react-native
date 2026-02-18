@@ -1,12 +1,20 @@
 import { colors } from "@/constants/colors";
 import React from "react";
-import { Pressable, PressableProps, StyleSheet, Text } from "react-native";
+import {
+  GestureResponderEvent,
+  Pressable,
+  PressableProps,
+  StyleSheet,
+  Text,
+} from "react-native";
+import * as Haptics from "expo-haptics";
 
 interface Props extends PressableProps {
   text: string;
   color?: string;
   variant?: "default" | "large";
   textColor?: string;
+  onPress?: (event: GestureResponderEvent) => void;
 }
 
 export function CustomBtn({
@@ -14,10 +22,15 @@ export function CustomBtn({
   color,
   variant = "default",
   textColor,
+  onPress,
   ...rest
 }: Props) {
   return (
     <Pressable
+      onPress={(e) => {
+        onPress?.(e);
+        Haptics.selectionAsync();
+      }}
       {...rest}
       style={({ pressed }) => [
         variant === "default" && styles.btn,

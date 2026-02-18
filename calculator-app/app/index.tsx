@@ -36,6 +36,7 @@ export default function Index() {
         <Column
           style={{
             // backgroundColor: "red",
+            gap: 0,
             alignItems: "flex-end",
           }}
         >

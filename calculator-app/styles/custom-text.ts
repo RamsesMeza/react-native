@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
   default: {
     fontFamily: "SNPro",
     color: colors.withe,
+    height: 80,
+    textAlign: "right",
   },
   mainText: {
     color: colors.lightGray,
