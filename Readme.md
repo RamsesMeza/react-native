@@ -42,3 +42,5 @@ git config --global user.email "Tu correo"
 - [TypeScript importer](https://marketplace.visualstudio.com/items?itemName=pmneo.tsimporter)
 
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
