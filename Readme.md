@@ -40,3 +40,5 @@ git config --global user.email "Tu correo"
 - [Backticks](https://marketplace.visualstudio.com/items?itemName=fractalbrew.backticks)
 
 - [TypeScript importer](https://marketplace.visualstudio.com/items?itemName=pmneo.tsimporter)
+
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
